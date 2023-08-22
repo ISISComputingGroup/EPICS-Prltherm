@@ -1,0 +1,30 @@
+# ===============================
+# Simulation and Disable records
+# ===============================
+
+file prltherm_header.template {
+    pattern
+    { RECSIM,       DISABLE }
+    { "\$(RECSIM)", "\$(DISABLE)", }
+}
+
+file prltherm_channel.template { 
+    pattern
+    { CHANNEL}
+    {  "0", }
+    {  "1", }
+    {  "2", }
+    {  "3", }
+    {  "4", }
+    {  "5", }
+    {  "6", }
+    {  "7", }
+    {  "8", }
+    {  "9", }
+    { "10", }
+    { "11", }
+    { "12", }
+    { "13", }
+    { "14", }
+    { "15", }
+}

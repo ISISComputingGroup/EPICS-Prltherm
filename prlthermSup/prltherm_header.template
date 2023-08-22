@@ -1,3 +1,4 @@
+
 record(bo, "$(P)SIM")
 {
     field(SCAN, "Passive")
