@@ -1,5 +1,5 @@
 
-record(ai, "$(P):TEMP$(CHANNEL)")
+record(ai, "$(P)TEMP$(CHANNEL)")
 {
                   field(DESC, "Temperature of Channel $(CHANNEL)")
   $(IFNOTRECSIM)  field(SCAN, "1 second")
@@ -9,19 +9,17 @@ record(ai, "$(P):TEMP$(CHANNEL)")
   $(IFRECSIM)     field(SCAN, ".1 second")
 
                   field(PREC, "2")
-                  field(INP, "@asyn(R0, $(CHANNEL), 1) DATA")
+                  field(INP, "@asyn(L0, $(CHANNEL), 1) DATA")
                   field(EGU, "C")
 
                   field(SIML, "$(P)SIM")
                   field(SIOL, "$(P)SIM:TEMP$(CHANNEL)")
                   field(SDIS, "$(P)DISABLE")
 
-  info(archive, "VAL")
-
-  info(alarm, "PRLTHERM")
+                  info(archive, "VAL")
 }
 
 record(ai,  "$(P)SIM:TEMP$(CHANNEL)")
 {
-                  field(DESC,  "Temperature of Channel $(CHANNEL) SIM value")
+                  field(DESC,  "SIM Temperature of Channel $(CHANNEL)")
 }
