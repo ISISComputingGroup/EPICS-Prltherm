@@ -13,6 +13,7 @@ IOCS = [
         "directory": get_default_ioc_dir("PRLTHERM"),
         "macros": {},
         "pv_for_existence_base_name": "TEMP",
+        "number_of_channels": 16,
         "ioc_launcher_class": ProcServLauncher,
     },
 ]
@@ -32,6 +33,6 @@ class PrlthermTests(unittest.TestCase):
         self.ca.assert_that_pv_exists("DISABLE", timeout=30)
 
     def test_WHEN_ioc_is_started_THEN_PVs_for_all_channels_exist(self):
-        for i in range(1,17,1):
+        for i in range(1,IOCS[0]['number_of_channels']+1,1):
             pv_to_check = IOCS[0]['pv_for_existence_base_name']+f"{i:02}"
             self.ca.assert_that_pv_exists(pv_to_check, timeout=30)
