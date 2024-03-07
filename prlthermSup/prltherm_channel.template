@@ -17,6 +17,7 @@ record(ai, "$(P)TEMP$(CHANNEL)")
                   field(SDIS, "$(P)DISABLE")
 
                   info(archive, "VAL")
+                  info(interest, "HIGH")
 }
 
 record(ai,  "$(P)SIM:TEMP$(CHANNEL)")
