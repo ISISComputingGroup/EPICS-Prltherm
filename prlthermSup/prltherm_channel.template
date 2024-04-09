@@ -9,7 +9,7 @@ record(ai, "$(P)TEMP$(CHANNEL)")
   $(IFRECSIM)     field(SCAN, "1 second")
 
                   field(PREC, "2")
-                  field(INP, "@asyn(L0, $(CHANNEL), 5.0) DATA")
+                  field(INP, "@asyn(L0, $(ID), 5.0) DATA")
                   field(EGU, "K")
 
                   field(SIML, "$(P)SIM")
