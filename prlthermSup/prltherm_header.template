@@ -7,7 +7,7 @@ record(bo, "$(P)SIM")
     field(SCAN, "Passive")
     field(ZNAM, "NO")
     field(ONAM, "YES")
-    field(VAL, "$(RECSIM=0)")
+    field(VAL,  "$(RECSIM=0)")
 }
 
 record(bo, "$(P)DISABLE")
@@ -17,7 +17,7 @@ record(bo, "$(P)DISABLE")
     field(OMSL, "supervisory")
     field(ZNAM, "COMMS ENABLED")
     field(ONAM, "COMMS DISABLED")
-    field(VAL, "$(DISABLE=0)")
+    field(VAL,  "$(DISABLE=0)")
 
     info(alarm, "PRLTHERM")
 }
