@@ -13,7 +13,7 @@ record(ai, "$(P)TEMP$(CHANNEL)")
                   field(INP,  "@asyn(L0, $(ID), 5.0) DATA")
 
 # TODO: replace units with that specified by macro value
-                  field(EGU,  "K")
+                  field(EGU,  "$(UNITS)")
 
                   field(SIML, "$(P)SIM")
                   field(SIOL, "$(P)SIM:TEMP$(CHANNEL)")
