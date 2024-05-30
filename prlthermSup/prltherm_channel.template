@@ -11,7 +11,7 @@ record(ai, "$(P)TEMP$(CHANNEL)")
 
                   field(PREC, "2")
                   field(INP,  "@asyn(L0, $(ID), 5.0) DATA")
-                  field(EGU,  "$(UNITS)")
+                  field(EGU,  "$(UNITS_IOC)")
                   field(SIML, "$(P)SIM")
                   field(SIOL, "$(P)SIM:TEMP$(CHANNEL)")
                   field(SDIS, "$(P)DISABLE")
