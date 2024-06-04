@@ -1,13 +1,11 @@
 
 record(ai, "$(P)TEMP$(CHANNEL)")
 {
-                  field(PINI, "YES")
+  $(IFRECSIM)     field(PINI, "YES")
                   field(DESC, "Channel $(CHANNEL) Temp")
   $(IFNOTRECSIM)  field(SCAN, "I/O Intr")
-  $(IFNOTRECSIM)  field(PINI, "NO")
   $(IFNOTRECSIM)  field(DTYP, "asynFloat64")
-  $(IFRECSIM)     field(DTYP, "Soft Channel")
-  $(IFRECSIM)     field(SCAN, "1 second")
+                  field(SSCN, "1 second")
 
                   field(PREC, "2")
                   field(INP,  "@asyn(L0, $(ID), 5.0) DATA")
