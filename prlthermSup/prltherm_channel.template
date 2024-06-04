@@ -8,7 +8,7 @@ record(ai, "$(P)TEMP$(CHANNEL)")
                   field(SSCN, "1 second")
 
                   field(PREC, "2")
-                  field(INP,  "@asyn(L0, $(ID), 5.0) DATA")
+  $(IFNOTRECSIM)  field(INP,  "@asyn(L0, $(ID), 5.0) DATA")
                   field(EGU,  "$(UNITS_IOC)")
                   field(SIML, "$(P)SIM")
                   field(SIOL, "$(P)SIM:TEMP$(CHANNEL)")
