@@ -1,8 +1,8 @@
 import unittest
 
 from utils.channel_access import ChannelAccess
+from utils.ioc_launcher import IOCRegister, ProcServLauncher, get_default_ioc_dir
 from utils.test_modes import TestModes
-from utils.ioc_launcher import get_default_ioc_dir, ProcServLauncher, IOCRegister
 
 DEVICE_PREFIX = "PRLTHERM_01"
 
