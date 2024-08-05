@@ -2,4 +2,4 @@ from ..lewis_versions import LEWIS_LATEST
 from .device import SimulatedPrltherm
 
 framework_version = LEWIS_LATEST
-__all__ = ['SimulatedPrltherm']
+__all__ = ["SimulatedPrltherm"]
